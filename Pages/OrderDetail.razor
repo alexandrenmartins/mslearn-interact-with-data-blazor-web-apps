@@ -57,10 +57,10 @@
                 <div class="track-order-details">
                     @if (IsOrderIncomplete)
                     {
-                        <p>Checking your order status...</p>
-                        @* <div class="spinner-grow text-danger float-right" role="status">
-                            <span class="sr-only">Checking your order status...</span>
-                        </div> *@
+                        <span class="text-primary">Checking your order status...</span>
+                        <div class="spinner-grow text-danger float-right" role="status">
+                            @* <span class="sr-only">Checking your order status...</span> *@
+                        </div>
                     }
                     @foreach (var pizza in orderWithStatus.Order.Pizzas)
                     {
